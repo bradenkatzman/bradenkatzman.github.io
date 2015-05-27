@@ -1,5 +1,4 @@
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    background-color: blue;
-    color: white;
+#navbar {
+	color: #FFFFFF;
+    background-color: #CC3333;
 }
