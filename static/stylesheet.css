@@ -1,4 +1,9 @@
-#navbar {
-	color: #FFFFFF;
-    background-color: #CC3333;
+.navbar-default
+{
+	background-color: blue;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
 }
