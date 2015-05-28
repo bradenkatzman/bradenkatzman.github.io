@@ -1,9 +1,7 @@
-.navbar-default
-{
-	background-color: blue;
+body {
+  padding-top: 50px;
 }
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: white;
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
 }
