@@ -56,7 +56,17 @@
         <li><a href="https://lculpa.herokuapp.com">LCULPA</a></li>
         <ul>
           <li><a href="https://github.com/bradenkatzman/lculpa">Source Code</a><br>
-          <button onclick="about()">About</button></li>
+            <button onclick="about()">About</button>
+            <script>
+            function about() {
+              alert("LCULPA is a web application that allows users to write reviews for their
+                professors at List College.\n\nI wrote the application in Python, using Flask.
+                I am using MongoDB as a database, running an instance of the DB on MongoLab.
+                The application is hosted through Heroku");
+            }
+            </script>
+
+          </li>
         </ul>
 
 
@@ -68,19 +78,12 @@
   <h3>Contact Links</h3>
 
 
-  <script>
-  function about() {
-    alert("LCULPA is a web application that allows users to write reviews for their
-      professors at List College.\n\nI wrote the application in Python, using Flask.
-      I am using MongoDB as a database, running an instance of the DB on MongoLab.
-      The application is hosted through Heroku");
-  }
-  </script>
+
 
   <!-- include bootstrap JS files -->
   <script type="text/javascript" src="/static/js/jquery.min.js"></script>
   <script type="text/javascript" src="/static/js/bootstrap.min.js') }}"></script>
-  <script type="text/javascript" src="/static/js/app.js') }}"></script>
+<script type="text/javascript" src="/static/js/app.js') }}"></script>
 
 </body>
 </html>
