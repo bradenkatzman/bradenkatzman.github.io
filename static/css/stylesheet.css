@@ -39,5 +39,6 @@ body {
 
 .projects {
   padding: 40px 15px;
+  font-size: 40;
   text-align: left;
 }
