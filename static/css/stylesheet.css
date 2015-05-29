@@ -26,3 +26,8 @@ body {
 #degrees {
 	font-size: 25;
 } 
+
+.projects {
+  padding: 40px 15px;
+  text-align: left;
+}
