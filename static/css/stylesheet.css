@@ -1,7 +1,7 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
+.me {
   padding: 40px 15px;
   text-align: center;
 }
@@ -13,6 +13,7 @@ body {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
 [class*="col-"] {
   padding-top: 15px;
   padding-bottom: 15px;
