@@ -39,6 +39,14 @@ body {
 
 .projects {
   padding: 40px 15px;
-  font-size: 30px;
+  font-size: 27px;
   text-align: left;
+}
+
+.contact {
+
+  padding: 40px 15px;
+  font-size: 27px;
+  text-align: right;
+
 }
