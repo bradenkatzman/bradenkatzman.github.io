@@ -6,6 +6,16 @@ body {
   text-align: center;
 }
 
+.navbar-default
+{
+  background-color: black;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+}
+
 .row {
   margin-bottom: 20px;
 }
