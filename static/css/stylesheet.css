@@ -1,21 +1,21 @@
 /* unvisited link */
 a:link {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 /* visited link */
 a:visited {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 /* mouse over link */
 a:hover {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 /* selected link */
 a:active {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 body {
