@@ -35,10 +35,6 @@ body {
 .navbar-default .navbar-brand {
     color: black;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: white;
-}
 
 .row {
   margin-bottom: 20px;
