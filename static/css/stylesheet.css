@@ -26,10 +26,12 @@ body {
   text-align: center;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    background-color: white;
-    color: blue;
+.navbar-default {
+    background-color: black;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: blue;
 }
 
 .row {
