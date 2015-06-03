@@ -29,7 +29,7 @@ body {
 /* navbar */
 .navbar-default {
     background-color: blue;
-    border-color: white;
+    border-color: black;
 }
 /* title */
 .navbar-default .navbar-brand {
