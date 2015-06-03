@@ -26,10 +26,18 @@ body {
   text-align: center;
 }
 
+/* navbar */
+.navbar-default {
+    background-color: blue;
+    border-color: white;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: black;
+}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    background-color: gray;
-    color: blue;
+    color: white;
 }
 
 .row {
