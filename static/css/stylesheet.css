@@ -28,8 +28,8 @@ body {
 
 /* navbar */
 .navbar-default {
-    background-color: blue;
-    border-color: black;
+    background-color: #0000FF;
+
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -37,7 +37,7 @@ body {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: blue;
+    color: white;
 }
 
 .row {
