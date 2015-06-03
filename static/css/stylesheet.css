@@ -26,16 +26,6 @@ body {
   text-align: center;
 }
 
-/* navbar */
-.navbar-default {
-    background-color: #0000FF;
-
-}
-/* title */
-.navbar-default .navbar-brand {
-    color: black;
-}
-
 .row {
   margin-bottom: 20px;
 }
