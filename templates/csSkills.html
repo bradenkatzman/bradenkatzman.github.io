@@ -43,7 +43,7 @@
 
 <div class="jumbotron">
   <h1><center>Computer Science Skills</center></h1>
-  <p><center>This page outlines the various programming languages, IDEs, and tools that I have used, as well as different projects that I have worked on.<br>Please contact me for source code!</center></p>
+  <p><center>This page outlines the various programming languages, IDEs, and tools that I have used, as well as different projects that I have worked on.<br>Please <a href="email.html">contact me</a> for source code!</center></p>
 </div>
 
 
@@ -73,7 +73,7 @@
       </li>
       <li class="list-group-item"><center><strong>Javascript</strong></center>
         <div class="progress">
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"><span class="sr-only">35% Complete (warning)</span></div>
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
         </div>
       </li>
       <li class="list-group-item"><center><strong>HTML/CSS</strong></center>
@@ -86,9 +86,28 @@
 
   <div class="col-xs-6">
     <ul class="list-group">
-      <li class="list-group-item"><h1><center>Development Environments</center></h1></li>
-      <li class="list-group-item"><center>Eclipse</center></li>
-      <li class="list-group-item"><center>Git & Github</center></li>
+      <li class="list-group-item"><h1><center>Projects</center></h1></li>
+      <li class="list-group-item"><center>Web Server</center>
+        <br>I wrote a web server in C (three-tier architecture) that delivers static HTML pages and allows database searching by maintaining a persistent backend database connection. The server processes HTTP requests and responds accordingly.
+      </li>
+      <li class="list-group-item"><center>Minimum Spanning Trees</center>
+        <br>I developed two programs in Java that use Dijkstra's and Kruskal's algorithms to find minimum spanning trees between US cities. Through a GUI, users can select two cities and the MST is displayed graphically.
+      </li>
+      <li class="list-group-item"><center>Huffman Codes</center>
+        <br>I wrote a Java program that utilizes a Minimum Binary Heap to determine the character frequency of a file, simulating the underlying process of file compression. The program reads through the file and builds a binary heap corresponding to character frequency in the given file.
+      </li>
+      <li class="list-group-item"><center>Spell Checker</center>
+        <br>I wrote a Java program that first enters a few hundred thousand dictionary words into a hash table and then allows the user to use the table as a spell checker.
+      </li>
+       <li class="list-group-item"><center>Shell Script Database Search</center>
+        <br>I wrote a C program that executes a shell script which uses named pipes, netcat, and piping to allow a user to connect to my program from a separate terminal on a known port and search a database of messages.
+      </li>
+       <li class="list-group-item"><center>C++ Templates</center>
+        <br>This C++ program creates a list class (TList) a few different ways. The first is with an underlying C linked list which I wrote previously, the second is templated with a private C++ list member so it can be used with any data object, and the third is also templated with a private C++ vector member so the [] operator can be used more efficiently.
+      </li>
+       <li class="list-group-item"><center>Expression Tree Evaluator</center>
+        <br>I wrote a Java program which uses a stack to evaluate expression trees. The program pushes integers on the stack, pops and evaluates them on an operand, and then pushes the result back on the stack. At the end of the expression, the stack is checked to ensure there is just one integer, the result, and pops said result and returns it to the user.
+      </li>
     </ul>
   </div><!-- /.col-xs-6 -->
 </div>
@@ -113,6 +132,16 @@
       <li class="list-group-item"><center>TCP/IP</center></li>
       <li class="list-group-item"><center>Shell Scripting</center></li>
       <li class="list-group-item"><center>Fundamental Data Structures</center></li>
+    </ul>
+  </div><!-- /.col-xs-6 -->
+</div>
+
+<div class="row">
+  <div class="col-xs-6">
+    <ul class="list-group">
+      <li class="list-group-item"><h1><center>Development Environments</center></h1></li>
+      <li class="list-group-item"><center>Eclipse</center></li>
+      <li class="list-group-item"><center>Git & Github</center></li>
     </ul>
   </div><!-- /.col-xs-6 -->
 </div>
