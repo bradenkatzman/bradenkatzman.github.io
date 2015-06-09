@@ -20,7 +20,7 @@ a:active {
 
 body {
   padding-top: 60px;
-  padding-bottom: 2000px; /* stretches background img */
+  padding-bottom: 100px; /* stretches background img */
 }
 .me {
   padding: 40px 15px;
