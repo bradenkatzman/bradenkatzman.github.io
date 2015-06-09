@@ -1,3 +1,14 @@
+html{
+    /* This image will be displayed fullscreen */
+    background:url('../images/background.jpg') no-repeat center center;
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* fill screen */
+    background-size:cover;
+}
+
 /* unvisited link */
 a:link {
     color: #0000FF;
@@ -18,8 +29,9 @@ a:active {
     color: #0000FF;
 }
 
-body {
-  padding-top: 50px;
+body {  
+  /* Workaround for some mobile browsers */
+  min-height:100%;
 }
 .me {
   padding: 40px 15px;
