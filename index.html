@@ -65,49 +65,55 @@
 
   <div id="projects">
     <h2><u>Apps</u></h2>
-    <p><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
-      <br>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></p>
-      <p><a href="" target="_blank">LCSC Website (link to be live soon)</a>
-        <br>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></p>
-      </div>
+    <ul>
+      <li><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
+        <ul>
+          <li><a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></li>
+        </ul>
+      </li>
+      <li><a href="lcsconlice.com" target="_blank">LCSC Website</a>
+        <ul>
+          <li><a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
-    </div>
+  <footer>
+    <a href="https://www.linkedin.com/in/bradenkatzman" target="_blank">
+      <img border="0" alt="LinkedIn" src="/static/images/linkedin.jpg" width="42" height="35">
+    </a>
+    &nbsp&nbsp
+    <a href="https://github.com/bradenkatzman" target="_blank">
+      <img border="0" alt="GitHub" src="/static/images/github.png" width="42" height="30">
+    </a>
+    &nbsp&nbsp
+    <a href="/templates/email.html">
+      <img border="0" alt="Email" src="/static/images/mail.png" width="42" height="45">
+    </a>
+  </footer>
 
-    <footer>
-      <a href="https://www.linkedin.com/in/bradenkatzman" target="_blank">
-        <img border="0" alt="LinkedIn" src="/static/images/linkedin.jpg" width="42" height="35">
-      </a>
-      &nbsp&nbsp
-      <a href="https://github.com/bradenkatzman" target="_blank">
-        <img border="0" alt="GitHub" src="/static/images/github.png" width="42" height="30">
-      </a>
-      &nbsp&nbsp
-      <a href="/templates/email.html">
-        <img border="0" alt="Email" src="/static/images/mail.png" width="42" height="45">
-      </a>
-    </footer>
+  <!-- include bootstrap JS files -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="jquery-2.1.4.js"></script>
+  <script src="strings.js"></script>
+  <script>
 
-    <!-- include bootstrap JS files -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="jquery-2.1.4.js"></script>
-    <script src="strings.js"></script>
-    <script>
+  function onload() {
+    startChange();
+    setInterval(startChange, 26000);
+  }
 
-    function onload() {
-      startChange();
-      setInterval(startChange, 26000);
-    }
+  function startChange() {
 
-    function startChange() {
-
-      fadeO("#one", 350);
-      fadeO("#two", 350);
-      fadeO("#three", 350);
-      fadeO("#four", 350);
-      fadeO("#five", 350);
-      
+    fadeO("#one", 350);
+    fadeO("#two", 350);
+    fadeO("#three", 350);
+    fadeO("#four", 350);
+    fadeO("#five", 350);
+    
       //a student
       setTimeout(change, 1000, "#one", strings[8]);
       setTimeout(change, 1000, "#two", strings[10]);
