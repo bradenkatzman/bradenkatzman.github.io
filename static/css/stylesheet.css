@@ -1,6 +1,3 @@
-#color {
-  background-color: #87CEFA;
-}
 /* unvisited link */
 a:link {
     color: #0000FF;
@@ -21,21 +18,6 @@ a:active {
     color: #0000FF;
 }
 
-#leftPanel {
-  width: 45%;
-  float: left;
-}
-
-#rightPanel {
-  width: 45%;
-  float: left;
-}
-
-.me {
-  padding: 40px;
-  text-align: center;
-}
-
 .row {
   margin-bottom: 20px;
   margin-top: 10px;
@@ -43,20 +25,4 @@ a:active {
 
 #degrees {
 	font-size: 25px;
-} 
-
-#projects {
-  padding: 40px 15px;
-  font-size: 20px;
-  text-align: left;
-}
-
-footer {
-  display: block;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  font-size: 20px;
-
 }

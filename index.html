@@ -13,9 +13,46 @@
 
   <style type="text/css">
 
+  #color {
+    background-color: #87CEFA;
+  }
+
   #zero, #one, #two, #three, #four, #five {
     font-family: Times;
     font-size: 15pt;
+  }
+
+  .leftPanel {
+    margin-top: 50px;
+    margin-right: 15px;
+    width: 40%;
+    float: left;
+  }
+
+  .rightPanel {
+    margin-top: 50px;
+    width: 40%;
+    float: left;
+  }
+
+  .me {
+    text-align: center;
+  }
+
+  #projects {
+    margin-left: 25%;
+  }
+
+  #projects {
+    font-size: 15pt;
+    text-align: left;
+  }
+
+  #footer {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 
   </style>
@@ -24,96 +61,97 @@
 
 <body id="color" onload="onload()">
 
- <!-- Fixed navbar -->
- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Braden Katzman</a>
+
+  <div>
+   <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Braden Katzman</a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/templates/education.html">Education</a></li>
+          <li><a href="/templates/workExperience.html">Work Experience</a></li>
+          <li><a href="/templates/csSkills.html">CS Skills</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+</div>
+
+<div>
+  <div class="leftPanel">
+    <div class="me">
+      <h4>Braden Michael Harris Katzman</h4>
+      <p class="lead"><strong>Software Engineer </strong></p>
     </div>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="/templates/education.html">Education</a></li>
-        <li><a href="/templates/workExperience.html">Work Experience</a></li>
-        <li><a href="/templates/csSkills.html">CS Skills</a></li>
+    <div id="changing">
+      <span id="zero">Braden </span><span id="one"></span><span id="two"></span><span id="three"></span><span id="four"></span><span id="five"></span>
+    </div>
+  </div>
+
+  <div class="rightPanel">
+
+    <div id="projects">
+      <h4><u>Apps</u></h4>
+      <ul>
+        <li><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
+          <ul>
+            <li><a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></li>
+          </ul>
+        </li>
+        <li><a href="lcsconlice.com" target="_blank">LCSC Website</a>
+          <ul>
+            <li><a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></li>
+          </ul>
+        </li>
       </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
-
-
-<div class="leftPanel">
-
-  <div class="me">
-    <h4>Braden Michael Harris Katzman</h4>
-    <p class="lead"><strong>Software Engineer </strong></p>
-  </div>
-
-  <div id="changing">
-    <span id="zero">Braden </span><span id="one"></span><span id="two"></span><span id="three"></span><span id="four"></span><span id="five"></span>
+    </div>
   </div>
 </div>
 
-<div class="rightPanel">
-
-  <div id="projects">
-    <h2><u>Apps</u></h2>
-    <ul>
-      <li><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
-        <ul>
-          <li><a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></li>
-        </ul>
-      </li>
-      <li><a href="lcsconlice.com" target="_blank">LCSC Website</a>
-        <ul>
-          <li><a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-
-  <footer>
+<div id="footer">
     <a href="https://www.linkedin.com/in/bradenkatzman" target="_blank">
-      <img border="0" alt="LinkedIn" src="/static/images/linkedin.jpg" width="42" height="35">
+      <img alt="LinkedIn" src="/static/images/linkedin.jpg" width="42" height="35">
     </a>
-    &nbsp&nbsp
     <a href="https://github.com/bradenkatzman" target="_blank">
-      <img border="0" alt="GitHub" src="/static/images/github.png" width="42" height="30">
+      <img alt="GitHub" src="/static/images/github.png" width="42" height="30">
     </a>
-    &nbsp&nbsp
     <a href="/templates/email.html">
-      <img border="0" alt="Email" src="/static/images/mail.png" width="42" height="45">
+      <img alt="Email" src="/static/images/mail.png" width="42" height="45">
     </a>
-  </footer>
+</div>
 
-  <!-- include bootstrap JS files -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="/static/js/bootstrap.min.js"></script>
-  <script src="jquery-2.1.4.js"></script>
-  <script src="strings.js"></script>
-  <script>
+<!-- include bootstrap JS files -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="jquery-2.1.4.js"></script>
+<script src="strings.js"></script>
+<script>
 
-  function onload() {
-    startChange();
-    setInterval(startChange, 26000);
-  }
+function onload() {
+  startChange();
+  setInterval(startChange, 26000);
+}
 
-  function startChange() {
+function startChange() {
 
-    fadeO("#one", 350);
-    fadeO("#two", 350);
-    fadeO("#three", 350);
-    fadeO("#four", 350);
-    fadeO("#five", 350);
+  fadeO("#one", 350);
+  fadeO("#two", 350);
+  fadeO("#three", 350);
+  fadeO("#four", 350);
+  fadeO("#five", 350);
 
       //a student
       setTimeout(change, 1000, "#one", strings[8]);
