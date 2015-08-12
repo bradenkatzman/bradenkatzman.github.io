@@ -2,14 +2,14 @@
  * Author: Braden Katzman
  */
 
- var strings = [" a Computer Science student at Columbia University",
+ var strings = [" studying Computer Science",
  				" double majoring",
  				" Jewish Philosophy",
- 				" at The Jewish Theological Seminary of America",
  				" from",
  				" Northern California",
- 				" likes",
+ 				" like",
  				" jQuery",
- 				" is",
+ 				" am",
  				" in",
- 				" a student"];
+ 				" a student at Columbia",
+ 				"I"];

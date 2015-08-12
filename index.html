@@ -19,6 +19,7 @@
 
   #main {
     margin-left: 15%;
+    margin-bottom: 5%;
   }
 
   #zero, #one, #two, #three, #four, #five {
@@ -27,20 +28,20 @@
   }
 
   .leftPanel {
-    margin-top: 150px;
-    margin-right: 15px;
+    margin-top: 10%;
+    margin-right: 2%;
     width: 40%;
     float: left;
   }
 
   .rightPanel {
-    margin-top: 150px;
+    margin-top: 10%;
     width: 40%;
     float: left;
   }
 
   #changing {
-    margin-left: 100px;
+    margin-left: 3%;
   }
 
   .me {
@@ -59,12 +60,29 @@
   #footer {
     text-align: center;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
   }
 
   .pad {
     margin-right: 15px;
+  }
+
+  .title {
+    font-size: 18pt;
+  }
+
+  #list {
+    font-size: 14pt;
+  }
+
+  #name {
+    color: #004C00;
+  }
+
+  #job {
+    color: #29293D;
+    font-size: 14pt;
   }
 
   </style>
@@ -105,45 +123,40 @@
 <div id="main">
   <div class="leftPanel">
     <div class="me">
-      <h4>Braden Michael Harris Katzman</h4>
-      <p class="lead"><strong>Software Engineer </strong></p>
+      <h4 class="title" id="name">Braden M.H. Katzman</h4>
+      <p class="lead" id="job"><strong>Software Engineer </strong></p>
     </div>
 
     <div id="changing">
-      <span id="zero">Braden </span><span id="one"></span><span id="two"></span><span id="three"></span><span id="four"></span><span id="five"></span>
+      <span id="zero"></span><span id="one"></span><span id="two"></span><span id="three"></span><span id="four"></span><span id="five"></span>
     </div>
   </div>
 
   <div class="rightPanel">
 
     <div id="projects">
-      <h4><u>Web Projects</u></h4>
-      <ul>
-         <li><a href="http://lcsconline.com" target="_blank">LCSC Website</a>
-          <ul>
-            <li><a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></li>
-          </ul>
-        </li>
-        <li><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
-          <ul>
-            <li><a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+      <h4 class="title"><u>Web Projects</u></h4>
+      <ul id="list">
+       <li><a href="http://lcsconline.com" target="_blank">LCSC Website</a>
+        <ul>
+          <li><a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></li>
+        </ul>
+      </li>
+      <li><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
+        <ul>
+          <li><a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
+</div>
 </div>
 
 <div id="footer">
-    <a class="pad" href="https://www.linkedin.com/in/bradenkatzman" target="_blank">
-      <img alt="LinkedIn" src="/static/images/linkedin.jpg" width="42" height="35">
-    </a>
-    <a class="pad" href="https://github.com/bradenkatzman" target="_blank">
-      <img alt="GitHub" src="/static/images/github.png" width="42" height="30">
-    </a>
-    <a href="/templates/email.html">
-      <img alt="Email" src="/static/images/mail.png" width="42" height="45">
-    </a>
+  <iframe src="http://ghbtns.com/github-btn.html?user=bradenkatzman&type=follow&size=large" height="30" width="240" frameborder="0" scrolling="0" style="width:240px; height: 30px;" allowTransparency="true"></iframe>
+  <a href="https://www.linkedin.com/pub/braden-katzman/96/6a1/a95">
+    <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="168" height="30" border="0" alt="View Braden Katzman's profile on LinkedIn">
+  </a>
 </div>
 
 <!-- include bootstrap JS files -->
@@ -156,66 +169,64 @@
 
 function onload() {
   startChange();
-  setInterval(startChange, 26000);
+  setInterval(startChange, 23000);
 }
 
 function startChange() {
 
+  fadeO("#zero", 350)
   fadeO("#one", 350);
   fadeO("#two", 350);
   fadeO("#three", 350);
   fadeO("#four", 350);
   fadeO("#five", 350);
 
-      //a student
-      setTimeout(change, 1000, "#one", strings[8]);
-      setTimeout(change, 1000, "#two", strings[10]);
+      //Braden is a student
+      setTimeout(change, 1000, "#zero", strings[10])
+      setTimeout(change, 1000, "#one", strings[7]);
+      setTimeout(change, 1000, "#two", strings[9]);
+      setTimeout(fadeI, 1000, "#zero", 700);
       setTimeout(fadeI, 1000, "#one", 700);
       setTimeout(fadeI, 1000, "#two", 700);
       
       // a computer science student
-      setTimeout(fadeO, 2000, "#two", 700);
-      setTimeout(change, 4000, "#two", strings[0]);
-      setTimeout(fadeI, 4000, "#two", 700);
+      setTimeout(fadeO, 3000, "#two", 700);
+      setTimeout(change, 5000, "#two", strings[0]);
+      setTimeout(fadeI, 5000, "#two", 700);
 
       //likes jQuery
-      setTimeout(fadeO, 6000, "#one", 700);
-      setTimeout(fadeO, 6000, "#two", 700);
-      setTimeout(change, 8000, "#one", strings[6]);
-      setTimeout(change, 8000, "#two", strings[7]);
-      setTimeout(fadeI, 8000, "#one", 700);
-      setTimeout(fadeI, 8000, "#two", 700);
+      setTimeout(fadeO, 7000, "#one", 700);
+      setTimeout(fadeO, 7000, "#two", 700);
+      setTimeout(change, 9000, "#one", strings[5]);
+      setTimeout(change, 9000, "#two", strings[6]);
+      setTimeout(fadeI, 9000, "#one", 700);
+      setTimeout(fadeI, 9000, "#two", 700);
 
       // is double majoring
-      setTimeout(fadeO, 10000, "#one", 700);
-      setTimeout(fadeO, 10000, "#two", 700);
-      setTimeout(change, 12000, "#one", strings[8]);
-      setTimeout(change, 12000, "#two", strings[1]);
-      setTimeout(fadeI, 12000, "#one", 700);
-      setTimeout(fadeI, 12000, "#two", 700);
+      setTimeout(fadeO, 11000, "#one", 700);
+      setTimeout(fadeO, 11000, "#two", 700);
+      setTimeout(change, 13000, "#one", strings[7]);
+      setTimeout(change, 13000, "#two", strings[1]);
+      setTimeout(fadeI, 13000, "#one", 700);
+      setTimeout(fadeI, 13000, "#two", 700);
 
       // in Jewish Philosophy
-      setTimeout(fadeO, 14000, "#three", 700);
-      setTimeout(fadeO, 14000, "#four", 700);
-      setTimeout(change, 16000, "#three", strings[9]);
-      setTimeout(change, 16000, "#four", strings[2]);
-      setTimeout(fadeI, 16000, "#three", 700);
-      setTimeout(fadeI, 16000, "#four", 700);
-
-      // at JTSA
-      setTimeout(fadeO, 18000, "#five", 700);
-      setTimeout(change, 20000, "#five", strings[3]);
-      setTimeout(fadeI, 20000, "#five", 700);
+      setTimeout(fadeO, 15000, "#three", 700);
+      setTimeout(fadeO, 15000, "#four", 700);
+      setTimeout(change, 17000, "#three", strings[8]);
+      setTimeout(change, 17000, "#four", strings[2]);
+      setTimeout(fadeI, 17000, "#three", 700);
+      setTimeout(fadeI, 17000, "#four", 700);
 
       // is from Northern California
-      setTimeout(fadeO, 22000, "#two", 700);
-      setTimeout(fadeO, 22000, "#three", 700);
-      setTimeout(fadeO, 22000, "#four", 700);
-      setTimeout(fadeO, 22000, "#five", 700);
-      setTimeout(change, 24000, "#two", strings[4]);
-      setTimeout(change, 24000, "#three", strings[5]);
-      setTimeout(fadeI, 24000, "#two", 700);
-      setTimeout(fadeI, 24000, "#three", 700);
+      setTimeout(fadeO, 19000, "#two", 700);
+      setTimeout(fadeO, 19000, "#three", 700);
+      setTimeout(fadeO, 19000, "#four", 700);
+      setTimeout(fadeO, 19000, "#five", 700);
+      setTimeout(change, 21000, "#two", strings[3]);
+      setTimeout(change, 21000, "#three", strings[4]);
+      setTimeout(fadeI, 21000, "#two", 700);
+      setTimeout(fadeI, 21000, "#three", 700);
     }
 
     function fadeO(id, ms) {
