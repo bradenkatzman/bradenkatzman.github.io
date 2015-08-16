@@ -16,31 +16,33 @@
 
 <body>
 
- <!-- Fixed navbar -->
- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="">Braden Katzman</a>
-    </div>
+  <div>
+   <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Braden Katzman</a>
+      </div>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="workExperience.html">Work Experience</a></li>
-        <li><a href="resume.html">Resume/CV</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="education.html">Education</a></li>
+          <li><a href="workExperience.html">Work Experience</a></li>
+          <li><a href="csSkills.html">CS Skills</a></li>
+          <li><a href="resume.html">Resume/CV</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+</div>
 
 
 <div class="jumbotron">
@@ -93,6 +95,9 @@
         <br>I learned and got significant experience with the OpenGL API at Stanford University studying with graduate students in the Stanford Graphics Lab. I learned how to render .obj meshes, implement reflection algorithms such as the Phong Model, and program the GPU with vertex and fragment shaders using GLSL. The source code for these projects can be found on my github.<br>For the final project in the class, I chose to implement a noise reduction algorithm which can be found <a href="https://github.com/bradenkatzman/ImageNoiseReduction" target="_blank">here</a>
         <br><a href="https://github.com/bradenkatzman/" target="_blank">Github</a> 
       </li>
+      <li class="list-group-item"><center><strong>P!x! Image Manipulation System</strong></center>
+        <br>This is an image manipulation program similar to Photoshop that implements HDR, preset filters, noise reduction, and auto colors.
+      </li>
       <li class="list-group-item"><center><strong>LCSC Website</strong></center>
         <br>This is a website that I developed for List College Student Council. It highlights my HTML/CSS experience, as well as my client-side programming experience in Javascript.
         <br>Link: <a href="http://lcsconline.com" target="_blank">LCSC Online</a>
@@ -112,17 +117,8 @@
       <li class="list-group-item"><center><strong>Huffman Codes</strong></center>
         <br>I wrote a Java program that utilizes a Minimum Binary Heap to determine the character frequency of a file, simulating the underlying process of file compression. The program reads through the file and builds a binary heap corresponding to character frequency in the given file.
       </li>
-      <li class="list-group-item"><center><strong>Spell Checker</strong></center>
-        <br>I wrote a Java program that first enters a few hundred thousand dictionary words into a hash table and then allows the user to use the table as a spell checker.
-      </li>
        <li class="list-group-item"><center><strong>Shell Script Database Search</strong></center>
         <br>I wrote a C program that executes a shell script which uses named pipes, netcat, and piping to allow a user to connect to my program from a separate terminal on a known port and search a database of messages.
-      </li>
-       <li class="list-group-item"><center><strong>C++ Templates</strong></center>
-        <br>This C++ program creates a list class (TList) a few different ways. The first is with an underlying C linked list which I wrote previously, the second is templated with a private C++ list member so it can be used with any data object, and the third is also templated with a private C++ vector member so the [] operator can be used more efficiently.
-      </li>
-       <li class="list-group-item"><center><strong>Expression Tree Evaluator</strong></center>
-        <br>I wrote a Java program which uses a stack to evaluate expression trees. The program pushes integers on the stack, pops and evaluates them on an operand, and then pushes the result back on the stack. At the end of the expression, the stack is checked to ensure there is just one integer, the result, and pops said result and returns it to the user.
       </li>
     </ul>
   </div><!-- /.col-xs-6 -->
@@ -137,6 +133,7 @@
       <li class="list-group-item"><center>AngularJS</center></li>
       <li class="list-group-item"><center>jQuery</center></li>
       <li class="list-group-item"><center>AJAX, JSON</center></li>
+      <li class="list-group-item"><center>NodeJS</center></li>
       <li class="list-group-item"><center>Flask</center></li>
       <li class="list-group-item"><center>MongoDB</center></li>
       <li class="list-group-item"><center>Bootstrap</center></li>
@@ -153,7 +150,6 @@
       <li class="list-group-item"><center>Front End Web Development</center></li>
       <li class="list-group-item"><center>Shell Scripting</center></li>
       <li class="list-group-item"><center>Mobile Application Development via <a href="http://journeyapps.com/" target="_blank">Journey Platform</a></center></li>
-      <li class="list-group-item"><center>Front End Web Development</center></li>
       <li class="list-group-item"><center>Fundamental Data Structures</center></li>
     </ul>
   </div><!-- /.col-xs-6 -->
