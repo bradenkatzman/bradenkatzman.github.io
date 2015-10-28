@@ -9,14 +9,39 @@
 
 	<style type="text/css">
 
+	body {
+		background-color: #87CEFA;
+	}
+
+	ul {
+		font-size: 16pt;
+	}
+
 	</style>
 </head>
 
 <body>
 
+	<h1>Open a BriskNote via the web</h1>
+		<p>Enter a file name: </p><input type="text" id="fileName" />
+		<button type="button" onclick="open_note()">Open Note</button>
 	<ul>
 		<li><a href="brisknote-app://brisknote/groceries.txt">groceries.txt</a></li>
+		<li><a href="brisknote-app://brisknote/Hello.txt">Hello.txt</a></li>
+		<li><a href="brisknote-app://brisknote/tester.txt">tester.txt</a></li>
+		<li><a href="brisknote-app://brisknote/send.txt">send.txt</a></li>
+		<li><a href="brisknote-app://brisknote/Hello.txt">Data.txt</a></li>
 	</ul>
+
+	<script type="text/javascript">
+		function open_note() {
+			console.log("redirecting to brisknote");
+			var note = document.getElementById("fileName").value;
+			var URL = "brisknote-app://brisknote/" + note + ".txt";
+			console.log(URL);
+			document.location.href = URL;
+		}
+	</script>
 
 </body>
 
