@@ -113,7 +113,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="/templates/education.html">Education</a></li>
           <li><a href="/templates/workExperience.html">Work Experience</a></li>
-          <li><a href="/templates/csSkills.html">CS Skills</a></li>
+          <!-- <li><a href="/templates/csSkills.html">CS Skills</a></li> -->
           <li><a href="/templates/resume.html">Resume/CV</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -125,7 +125,7 @@
   <div class="leftPanel">
     <div class="me">
       <h4 class="title" id="name">Braden M.H. Katzman</h4>
-      <p class="lead" id="job"><strong>Software Engineer </strong></p>
+      <p class="lead" id="job"><strong>Software Engineer at The Memorial Sloan Kettering Cancer Center<br>Student at Columbia University</strong></p>
     </div>
 
     <div id="changing">
@@ -136,15 +136,33 @@
   <div class="rightPanel">
 
     <div id="projects">
-      <h4 class="title"><u>Web Projects</u></h4>
+      <h4 class="title"><u>Projects</u></h4>
       <ul id="list">
-       <li><a href="http://lcsconline.com" target="_blank">LCSC Website</a>
+       <li>WormGUIDES
         <ul>
-          <li><a href="https://github.com/bradenkatzman/lcsc" target="_blank">Source Code</a></li>
+          <li>An interactive single cell developmental atlas and tool for collaborative 4-dimensional data exploration of C. elegans</li>
+          <li><a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0627-8" target="_blank">Description</a></li>
+           <li><a href="https://github.com/bradenkatzman/WormGUIDES" target="_blank">Source Code</a></li>
         </ul>
       </li>
+      <br>
+      <li>Single Cell RNA-Seq Data Classification through Machine Learning
+        <ul>
+          <li>Single cell classification of RNA-seq data using supervised learning algorithms (scikit-learn):</li>
+            <ul>
+              <li>Gaussian Naive Bayes</li>
+              <li>Support Vector Machines</li>
+              <li>K-Nearest Neighbor</li>
+              <li>Neural Networks</li>
+              <li>Random Forests, Decision Trees</li>
+            </ul>
+            <li><a href="https://github.com/bradenkatzman/CellClassificationMachineLearning" target="_blank">Source Code</a></li>
+        </ul> 
+      </li>
+      <br>
       <li><a href="https://lculpa.herokuapp.com" target="_blank">LCULPA</a>
         <ul>
+          <li>Professor Review Database and UI (Flask WebApp)</li>
           <li><a href="https://github.com/bradenkatzman/lculpa" target="_blank">Source Code</a></li>
         </ul>
       </li>
@@ -170,7 +188,7 @@
 
 function onload() {
   startChange();
-  setInterval(startChange, 23000);
+  setInterval(startChange, 45000);
 }
 
 function startChange() {
@@ -182,52 +200,70 @@ function startChange() {
   fadeO("#four", 350);
   fadeO("#five", 350);
 
-      //Braden is a student
-      setTimeout(change, 1000, "#zero", strings[10])
-      setTimeout(change, 1000, "#one", strings[7]);
-      setTimeout(change, 1000, "#two", strings[9]);
-      setTimeout(fadeI, 1000, "#zero", 700);
-      setTimeout(fadeI, 1000, "#one", 700);
-      setTimeout(fadeI, 1000, "#two", 700);
-      
-      // a computer science student
-      setTimeout(fadeO, 3000, "#two", 700);
-      setTimeout(change, 5000, "#two", strings[0]);
-      setTimeout(fadeI, 5000, "#two", 700);
 
-      //likes jQuery
+      //Hi
+      setTimeout(change, 1000, "#zero", strings[0])
+      setTimeout(fadeI, 1000, "#zero", 700);
+      
+      // I'm Braden
+      setTimeout(fadeO, 3000, "#zero", 700);
+      setTimeout(change, 5000, "#zero", strings[1]);
+      setTimeout(change, 5000, "#one", strings[2]);
+      setTimeout(fadeI, 5000, "#zero", 700);
+      setTimeout(fadeI, 5000, "#one", 700);
+
+      // I'm a student at Columbia University
       setTimeout(fadeO, 7000, "#one", 700);
-      setTimeout(fadeO, 7000, "#two", 700);
-      setTimeout(change, 9000, "#one", strings[5]);
-      setTimeout(change, 9000, "#two", strings[6]);
+      setTimeout(change, 9000, "#one", strings[3]);
+      setTimeout(change, 9000, "#two", strings[5]);
       setTimeout(fadeI, 9000, "#one", 700);
       setTimeout(fadeI, 9000, "#two", 700);
 
-      // is double majoring
-      setTimeout(fadeO, 11000, "#one", 700);
+      // I'm a Software Engineer at the MSKCC
       setTimeout(fadeO, 11000, "#two", 700);
-      setTimeout(change, 13000, "#one", strings[7]);
-      setTimeout(change, 13000, "#two", strings[1]);
-      setTimeout(fadeI, 13000, "#one", 700);
+      setTimeout(change, 13000, "#two", strings[7]);
       setTimeout(fadeI, 13000, "#two", 700);
 
-      // in Jewish Philosophy
-      setTimeout(fadeO, 14000, "#three", 700);
-      setTimeout(fadeO, 14000, "#four", 700);
-      setTimeout(change, 16000, "#three", strings[8]);
-      setTimeout(change, 16000, "#four", strings[2]);
-      setTimeout(fadeI, 16000, "#three", 700);
-      setTimeout(fadeI, 16000, "#four", 700);
+      // Artificial Intelligence is my passion
+      setTimeout(fadeO, 16000, "#zero", 700);
+      setTimeout(fadeO, 16000, "#one", 700);
+      setTimeout(fadeO, 16000, "#two", 700);
+      setTimeout(change, 18000, "#zero", strings[9]);
+      setTimeout(fadeI, 18000, "#zero", 700);
 
-      // is from Northern California
-      setTimeout(fadeO, 18000, "#two", 700);
-      setTimeout(fadeO, 18000, "#three", 700);
-      setTimeout(fadeO, 18000, "#four", 700);
-      setTimeout(fadeO, 18000, "#five", 700);
-      setTimeout(change, 20000, "#two", strings[3]);
-      setTimeout(change, 20000, "#three", strings[4]);
-      setTimeout(fadeI, 20000, "#two", 700);
-      setTimeout(fadeI, 20000, "#three", 700);
+      // I use AI to learn about biological processes
+      setTimeout(fadeO, 20000, "#zero", 700);
+      setTimeout(change, 22000, "#zero", strings[4]);
+      setTimeout(change, 22000, "#one", strings[10]);
+      setTimeout(fadeI, 22000, "#zero", 700);
+      setTimeout(fadeI, 22000, "#one", 700);
+
+      // I like photography
+      setTimeout(fadeO, 24000, "#one", 700);
+      setTimeout(change, 26000, "#one", strings[11]);
+      setTimeout(fadeI, 26000, "#one", 700);
+
+      // I'm from the SF Bay Area
+      setTimeout(fadeO, 28000, "#zero", 700);
+      setTimeout(fadeO, 28000, "#one", 700);
+      setTimeout(change, 30000, "#zero", strings[1]);
+      setTimeout(change, 30000, "#one", strings[12]);
+      setTimeout(fadeI, 30000, "#zero", 700);
+      setTimeout(fadeI, 30000, "#one", 700);
+
+      // Cooking soothes my soul
+      setTimeout(fadeO, 32000, "#zero", 700);
+      setTimeout(fadeO, 32000, "#one", 700);
+      setTimeout(change, 34000, "#zero", strings[13]);
+      setTimeout(fadeI, 34000, "#zero", 700);
+
+      // Kant is my hero
+      setTimeout(fadeO, 36000, "#zero", 700);
+      setTimeout(change, 38000, "#zero", strings[14]);
+      setTimeout(fadeI, 38000, "#zero", 700);
+      setTimeout(fadeO, 40000, "#zero", 700);
+
+
     }
 
     function fadeO(id, ms) {
