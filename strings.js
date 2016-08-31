@@ -11,12 +11,12 @@
  				" studying computer science.", //6
  				" Software Engineer at The Memorial Sloan Kettering Cancer Center.", //7
  				" interested in artificial intelligence.", //8
- 				" Artifical Intelligence is my passion.", //9
+ 				" Computer Vision & Graphics are my primary areas of research.", //9
  				" use AI to learn about biological processes.", //10
- 				" like photography.", //11
- 				" from the SF Bay Area.", //12
- 				"Cooking soothes my soul.", //13
- 				"Kant is my hero." //14
+ 				" like campfires.", //11
+ 				" from the San Francisco Bay Area.", //12
+ 				"I love cooking and photography.", //13
+ 				"Backpacking is my getaway." //14
  				];
 
 
