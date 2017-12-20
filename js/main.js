@@ -99,7 +99,7 @@
 
     //owl carousel
     $('.owl-carousel').owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay: 7000, //Set AutoPlay to 7 seconds
  
       items : 1,
       itemsDesktop : [1199,1],
